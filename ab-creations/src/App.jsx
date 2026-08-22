@@ -10,6 +10,9 @@ import corporateImg from "./assets/product-corporate.jpg";
 import work1Img from "./assets/work-1.jpg";
 import work2Img from "./assets/work-2.jpg";
 import work3Img from "./assets/work-3.jpg";
+import video1 from "./assets/video-1.mp4";
+import video2 from "./assets/video-2.mp4";
+import video3 from "./assets/video-3.mp4";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -508,8 +511,9 @@ Thank you!`;
           <div className="journal-card">
             <div className="journal-video-wrap">
               <span className="journal-tag">[001] MEHANDI SIGNAGE</span>
-              <video controls preload="metadata" playsInline>
-                <source src="/src/assets/video-1.mp4" type="video/mp4" />
+              <video controls preload="metadata" playsInline src={video1}>
+                <source src={video1} type="video/mp4" />
+                Your browser does not support video playback.
               </video>
             </div>
             <div className="journal-meta">
@@ -521,8 +525,9 @@ Thank you!`;
           <div className="journal-card">
             <div className="journal-video-wrap">
               <span className="journal-tag">[002] MB LOGO BOARD</span>
-              <video controls preload="metadata" playsInline>
-                <source src="/src/assets/video-2.mp4" type="video/mp4" />
+              <video controls preload="metadata" playsInline src={video2}>
+                <source src={video2} type="video/mp4" />
+                Your browser does not support video playback.
               </video>
             </div>
             <div className="journal-meta">
@@ -534,8 +539,9 @@ Thank you!`;
           <div className="journal-card">
             <div className="journal-video-wrap">
               <span className="journal-tag">[003] FLORAL LED MIRROR</span>
-              <video controls preload="metadata" playsInline>
-                <source src="/src/assets/video-3.mp4" type="video/mp4" />
+              <video controls preload="metadata" playsInline src={video3}>
+                <source src={video3} type="video/mp4" />
+                Your browser does not support video playback.
               </video>
             </div>
             <div className="journal-meta">
